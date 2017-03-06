@@ -2,72 +2,88 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Multi Step Form with Progress Bar using jQuery and CSS3</title>
-  
-  <!-- Google Font -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200' rel='stylesheet' type='text/css'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi Step Signup Form using jQuery and CSS3</title>
+  <meta name="description" content="A tutorial on how to create multi step signup form using jQuery CSS3" />
+  <meta name="keywords" content="web design, form, signup, ui, effect, javascript, animation, jquery, css3, designerdada" />
+  <meta name="author" content="Akash Bhadange" />
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
+      <!-- Google Font -->
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200' rel='stylesheet' type='text/css'>
 
-  
-</head>
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="css/reset.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Google Analytics: You can remove this code -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-29231762-2', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </head>
 
-<body>
-  <!-- multistep form -->
-  <form id="msform">
-    <!-- progressbar -->
-    <ul id="progressbar">
-      <li class="active">Account Setup</li>
-      <li>Social Profiles</li>
-      <li>Personal Details</li>
-    </ul>
-    <!-- fieldsets -->
-    <fieldset>
-      <img class="logo" src="img/designgiri-logo.png">
-      <h2 class="fs-title">Sign up</h2>
-      <h3 class="fs-subtitle">Let’s have a new beginning. Sign up for new you</h3>
-      <input type="text" name="username" placeholder="Username" />
-      <input type="text" name="email" placeholder="Email" />
-      <input type="password" name="pass" placeholder="Password" />
-      <input type="password" name="cpass" placeholder="Confirm Password" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    <fieldset>
-      <img class="logo" src="img/designgiri-logo.png">
-      <h2 class="fs-title">Social Profiles</h2>
-      <input type="text" name="twitter" placeholder="Twitter" />
-      <input type="text" name="facebook" placeholder="Facebook" />
-      <input type="text" name="gplus" placeholder="Google Plus" />
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    <fieldset>
-      <img class="logo" src="img/designgiri-logo.png">
-      <h2 class="fs-title">Personal Details</h2>
-      <input type="text" name="fname" placeholder="First Name" />
-      <input type="text" name="lname" placeholder="Last Name" />
-      <input type="text" name="phone" placeholder="Phone" />
-      <textarea name="address" placeholder="Address"></textarea>
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="submit" name="submit" class="submit action-button" value="Submit" />
-    </fieldset>
-    <fieldset>
-      <img class="logo" src="img/designgiri-logo.png">
-      <h2 class="fs-title">Personal Details</h2>
-      <input type="text" name="fname" placeholder="First Name" />
-      <input type="text" name="lname" placeholder="Last Name" />
-      <input type="text" name="phone" placeholder="Phone" />
-      <textarea name="address" placeholder="Address"></textarea>
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="submit" name="submit" class="submit action-button" value="Submit" />
-    </fieldset>
-    <p>Already have an account? <a href="#">Sign in</a></p>
-  </form>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <body>
+      <!-- multistep form -->
+      <form id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+          <li class="active">Account Setup</li>
+          <li>Social Profiles</li>
+          <li>Personal Details</li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+          <img class="logo" src="img/designgiri-logo.png">
+          <h2 class="fs-title">Sign up</h2>
+          <h3 class="fs-subtitle">Let’s have a new beginning. Sign up for new you</h3>
+          <input type="text" name="username" placeholder="Username" />
+          <input type="text" name="email" placeholder="Email" />
+          <input type="password" name="pass" placeholder="Password" />
+          <input type="password" name="cpass" placeholder="Confirm Password" />
+          <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+        <fieldset>
+          <img class="logo" src="img/designgiri-logo.png">
+          <h2 class="fs-title">Social Profiles</h2>
+          <input type="text" name="twitter" placeholder="Twitter" />
+          <input type="text" name="facebook" placeholder="Facebook" />
+          <input type="text" name="gplus" placeholder="Google Plus" />
+          <input type="button" name="previous" class="previous action-button" value="Previous" />
+          <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+        <fieldset>
+          <img class="logo" src="img/designgiri-logo.png">
+          <h2 class="fs-title">Personal Details</h2>
+          <input type="text" name="fname" placeholder="First Name" />
+          <input type="text" name="lname" placeholder="Last Name" />
+          <input type="text" name="phone" placeholder="Phone" />
+          <textarea name="address" placeholder="Address"></textarea>
+          <input type="button" name="previous" class="previous action-button" value="Previous" />
+          <input type="submit" name="submit" class="submit action-button" value="Submit" />
+        </fieldset>
+        <fieldset>
+          <img class="logo" src="img/designgiri-logo.png">
+          <h2 class="fs-title">Personal Details</h2>
+          <input type="text" name="fname" placeholder="First Name" />
+          <input type="text" name="lname" placeholder="Last Name" />
+          <input type="text" name="phone" placeholder="Phone" />
+          <textarea name="address" placeholder="Address"></textarea>
+          <input type="button" name="previous" class="previous action-button" value="Previous" />
+          <input type="submit" name="submit" class="submit action-button" value="Submit" />
+        </fieldset>
+        <p>Already have an account? <a href="#">Sign in</a></p>
+      </form>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+      <script src="js/main.js"></script>
 
-  <script src="js/main.js"></script>
+    </body>
+    </html>
 
-</body>
-</html>
