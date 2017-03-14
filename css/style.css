@@ -80,7 +80,7 @@ img.logo {
 	background: #e74c3c;
 	font-weight: bold;
 	color: white;
-	border: 0 none;
+	border: 1px solid transparent;
 	border-radius: 3px;
 	cursor: pointer;
 	padding: 12px 5px;
@@ -92,7 +92,9 @@ img.logo {
 	transition: all 0.2s;
 }
 #msform .previous.action-button {
-	background: #7bbdf3;
+	background: #fff;
+	border: 1px solid #7bbdf3;
+	color: #7bbdf3;
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
@@ -163,7 +165,7 @@ img.logo {
 /* Marking active/completed steps green */
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
-	background: #23cf5f;
+	background: #e74c3c;
 	color: white;
 }
 
